@@ -1,0 +1,239 @@
+/* 15/05/21 Design overhaul */
+/* Import Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway"); 
+
+/* Elements */
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    background: #ffecd9;
+    padding: 0.5vh; 
+    color: #424242;
+    font-family: "Raleway", Sans-serif;
+}
+
+h1 {
+    margin: 0.5vh 0vh;
+    font-size: 4vh;
+}
+
+h2 {
+    font-size: 3vh;
+    font-weight: 590;
+}
+
+p {
+    font-size: 2vh;
+}
+
+a {
+    color: #18a8b8;
+    font-size: 2.3vh;
+}
+
+p.arrViewText {
+    margin: 0;
+}
+
+/* Dropdown - Game selection, First row of buttons */
+#options {
+    white-space: nowrap;
+}
+
+#options select, #options button, #options {
+    font-size: 1.5vh;
+    margin: 0;
+}
+
+/* Second row of buttons */
+#options div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 0.2vh;
+}
+
+#options div button{
+    width: 19.5%;
+}
+
+/* Click animation for buttons */
+button {
+    background: -o-linear-gradient(top,  #f5f5f5 0%,#dddddd 100%);
+    background: -webkit-gradient(linear,  left top, left bottom,  from(#f5f5f5),to(#dddddd));
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#dddddd 100%);
+}
+
+button:active {
+    background: -o-linear-gradient(top,  #dddddd 0%,#f5f5f5 99%);
+    background: -webkit-gradient(linear,  left top, left bottom,  from(#dddddd),color-stop(99%, #f5f5f5));
+    background: linear-gradient(to bottom,  #dddddd 0%,#f5f5f5 99%)
+}
+
+/* Game solving options explanation pop-up (tooltip text) */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 0.1vh solid black;
+    border-radius: 0.5vh;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+  
+.tooltiptext {
+    visibility: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #CEDCDE;
+    color: #6C6061;
+    text-align: center;
+    padding: 0.5vh 1vh;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-shadow: 0.25vh 0.5vh 0.5vh rgba(0, 0, 0, 0.15);
+            box-shadow: 0.25vh 0.5vh 0.5vh rgba(0, 0, 0, 0.15);
+    border-radius: 0.5vh;
+    white-space: nowrap;
+}
+
+/* Top row */
+.top {
+    bottom: 130%;
+}
+
+/* Bottom row */
+.bottom {
+    top: 125%;
+}
+
+/* Mobile Support */
+.left, .right {
+    left: 0.1%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Grid */
+.gameboard, td, th {
+    padding: 0;
+    border-collapse: collapse;
+    width: 4.5vh;
+    height: 4.5vh;
+    font-size: 3vh;
+    color: #19699e;
+    vertical-align: middle;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0.3vh solid #7bcebc;
+}
+
+/* Solid dividing line through disabling the cell borders */
+.gameboard input {
+    border: none;
+}
+
+/* Grid and input fields */
+.gameboard, textarea {
+    background-color: #fceeb5;
+    -webkit-box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.15);
+}
+
+/* Input fields */
+textarea {
+    font-size: 1.5vh;
+    margin-top: 0.5vh;
+}
+
+/* Parent flexbox contain grid and side information */
+#game_and_info, #game_and_info div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+}
+
+#game_and_info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+
+/* Side information */
+#game_and_info div:nth-child(2) {
+    margin-left: 3vh;
+}
+
+/* Grid element viewing spacing */
+#e_view {
+    margin-top: 2vh;
+}
+
+/* Increase compatibility for mobile users */
+@media only screen and (max-width: 1000px) {
+    /* Display tooltip text on the left when in mobile */
+    .left {
+        left: unset;
+        right: 0.1%;
+    }
+
+    /* Change flex direction */
+    #game_and_info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    /* Side information flexbox */
+    #game_and_info div:nth-child(2) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 1vh 0vh 0vh 0vh;
+    }
+
+    /* Grid element viewing flexbox */
+    #e_view {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 1vh;
+    }
+}
