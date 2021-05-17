@@ -194,6 +194,8 @@ Mobile device with width larger than 1000px may experience this error
 */
 @media only screen and (max-width: 1000px) {
     button {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
 
