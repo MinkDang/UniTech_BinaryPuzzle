@@ -40,8 +40,9 @@ a {
     font-size: 2.3vh;
 }
 
-p.arrViewText {
-    margin: 0;
+input, textarea{
+    pointer-events: none;
+    resize: none;
 }
 
 /* Dropdown - Game selection, First row of buttons */
@@ -192,6 +193,10 @@ textarea {
 /* Grid element viewing spacing */
 #e_view {
     margin-top: 2vh;
+}
+
+p.arrViewText {
+    margin: 0;
 }
 
 /* Increase compatibility for mobile users */
