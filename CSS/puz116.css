@@ -59,7 +59,7 @@ p.arrViewText {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    margin-top: .2vh;
+    margin-top: 0.2vh;
 }
 
 #options div button{
@@ -97,7 +97,7 @@ button:active {
     background-color: #CEDCDE;
     color: #6C6061;
     text-align: center;
-    padding: .5vh 1vh;
+    padding: 0.5vh 1vh;
     position: absolute;
     z-index: 1;
     opacity: 0;
@@ -106,7 +106,7 @@ button:active {
     transition: all 1s;
     -webkit-box-shadow: 0.25vh 0.5vh 0.5vh rgba(0, 0, 0, 0.15);
             box-shadow: 0.25vh 0.5vh 0.5vh rgba(0, 0, 0, 0.15);
-    border-radius: .5vh;
+    border-radius: 0.5vh;
     white-space: nowrap;
 }
 
@@ -139,7 +139,7 @@ button:active {
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
-    border: .3vh solid #7bcebc;
+    border: 0.3vh solid #7bcebc;
 }
 
 /* Solid dividing line through disabling the cell borders */
