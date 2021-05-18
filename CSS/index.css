@@ -2,6 +2,11 @@
 /* Import Font */
 @import url("https://fonts.googleapis.com/css?family=Raleway"); 
 
+/* Elements */
+*{
+    cursor: default;  
+}
+
 body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -37,6 +42,7 @@ p {
 a {
     color: #18a8b8;
     font-size: 2.3vh;
+    cursor: pointer;
 }
 
 /* Put h1 and h2 on the same line */

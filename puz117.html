@@ -13,7 +13,7 @@
 	<link rel = "icon" href = "images/unitechsquare.png">
 </head>
 
-<body onload = "loadGrid(G01);">
+<body onload = "loadGrid(G01);" onselectstart = "return false;">
     <!-- Load Array G01 -->
     <div>
         <h1>v1.17 Binary Puzzle Game (6x6)</h1>
@@ -43,6 +43,7 @@
         </select>
 
         <!-- Game solving options with annotation on hover -->
+        <button type = "submit" onclick="ResetPuz()" class = "tooltip">Reset<span class = "tooltiptext top right">Reset the puzzle</span></button>
         <button type = "submit" onclick="BinaryPuzzleSolver()" class = "tooltip">--Solve Repeat--<span class = "tooltiptext top right">Finish the puzzle</span></button>
         <button type = "submit" onclick="SolvePuzzle()" class = "tooltip">--Solve once--<span class = "tooltiptext top left">Run through <i>Pairs</i>, <i>Trios</i>, and <i>Complete</i> once</span></button>
         <br />
