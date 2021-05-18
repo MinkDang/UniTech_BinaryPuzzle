@@ -42,11 +42,20 @@ function loadGrid(g) { // 21/4/21 Aiden - Fills in the grid from a template
 }
 
 // Get current game after dropdown maneuverer
-function gridrecall(a){
+function gridrecall(a) {
     clicked = true;
     n_a = false;
     gridchoice = a;
     loadGrid(gridchoice);
+}
+
+function ResetPuz() {
+    if (clicked == true) {
+        loadGrid(gridchoice);
+    }
+    else {
+        loadGrid(G01);
+    }
 }
 
 function DisplayGrid(G2D) {

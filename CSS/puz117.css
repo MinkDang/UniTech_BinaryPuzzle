@@ -2,11 +2,11 @@
 /* Import Font */
 @import url("https://fonts.googleapis.com/css?family=Raleway"); 
 
-/* Elements */
 *{
     cursor: default;  
 }
 
+/* Elements */
 body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,6 +23,7 @@ body {
     padding: 0.5vh; 
     color: #424242;
     font-family: "Raleway", Sans-serif;
+    
 }
 
 h1 {
