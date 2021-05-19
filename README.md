@@ -1,25 +1,24 @@
-# A2 UniTech BinaryPuzzle
+# 🎲 UniTech BinaryPuzzle
 <div id="badges" align="center">
-    <img src="https://img.shields.io/github/last-commit/aiden2480/A2-UniTech-BinaryPuzzle?color=1db954&logoColor=191414&style=flat-square" alt="GitHub last commit">
-    <img src="https://img.shields.io/github/commit-activity/m/aiden2480/A2-UniTech-BinaryPuzzle?color=1db954&logoColor=191414&style=flat-square" alt="GitHub commits per month">
-    <img src="https://img.shields.io/github/repo-size/aiden2480/A2-UniTech-BinaryPuzzle?color=1db954&logoColor=191414&style=flat-square" alt="GitHub repo size">
+    <img src="https://img.shields.io/github/last-commit/aiden2480/A2-UniTech-BinaryPuzzle?color=ffecd9&logoColor=ffecd9&style=flat-square" alt="GitHub last commit">
+    <img src="https://img.shields.io/github/commit-activity/m/aiden2480/A2-UniTech-BinaryPuzzle?color=ffecd9&logoColor=ffecd9&style=flat-square" alt="GitHub commits per month">
+    <img src="https://img.shields.io/github/repo-size/aiden2480/A2-UniTech-BinaryPuzzle?color=ffecd9&logoColor=ffecd9&style=flat-square" alt="GitHub repo size">
+    <a href="https://minkdang.github.io/UniTech_BinaryPuzzle/" target="_blank">
+        <img src="https://img.shields.io/badge/website-click%20here-ffecd9?logoColor=ffecd9&style=flat-square" alt="GitHub pages site" />
+    </a>
 </div>
 
-## GitHub Pages
-[Link here](https://minkdang.github.io/UniTech_BinaryPuzzle/)
+## ⚖️ Licence
+This project is licensed under the [MIT licence](https://choosealicense.com/licenses/mit/#). This choice has been justified in the [Wiki tab](https://github.com/MinkDang/UniTech_BinaryPuzzle/wiki).
 
-## Licence
-This project is licensed under the [MIT licence](https://choosealicense.com/licenses/mit/#). This choice has been justified in the [Wiki tab](https://github.com/aiden2480/A2-UniTech-BinaryPuzzle/wiki).
+## 📍 Contact
+💼 Company name: UniTech<br>
+🕗 Working hours: 8am - 4pm<br>
+👨‍💼 Director: Dominic B Heaton<br>
+☎️ Phone number: (02) 9315 4190<br>
+📧 Mail: contact<span>@UniTech.com</span>
 
-## When updating
- - [ ] Setup git
-     - [ ] Switch to your individual branch with `git checkout name`
-     - [ ] Run `git pull origin main` to merge online changes before you start working. It'll ask for a commit message so just enter `merge online changes` or something like that
- - [ ] Duplicate the HTML, JS, and CSS files (even if they won't be edited) and rename them to the version you're working on
- - [ ] Change the version number, description and source CSS/JS files on the version html page
- - [ ] Update `index.html` with new links and description
-
- - [ ] Test changes!!
- - [ ] After commiting and pushing to your individual branch, go to the [branches page](https://github.com/aiden2480/A2-UniTech-BinaryPuzzle/branches) and press `New Pull Request` next to your name. Title it with the version you worked on and press `Create Pull Request`, then `Merge`
- - [ ] Update your OneNote logbook and the group Gantt chart on OneDrive
-     - [ ] Create a backup of the Gantt chart after you edit it and put it in the `Gantt chart backups` folder
+## 📔 Notes
+📱 This code can be run on mobile with ease.<br>
+🌐 The best browser to run the code on is Google Chrome.<br>
+⛔ Do not attempt to contact the phone number or email.
